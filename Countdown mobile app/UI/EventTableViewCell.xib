@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Medium.ttf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventTableViewCell" rowHeight="80" id="KGk-i7-Jjw" customClass="EventTableViewCell" customModule="Countdown_mobile_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="489" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="489" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H8D-Sx-Zfg">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="5CK-3X-UJa"/>
+                            <constraint firstAttribute="height" constant="80" id="xsx-mB-CtH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKw-uT-Z6y">
+                        <rect key="frame" x="88" y="8" width="87.5" height="19"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event countdown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVh-n1-2AY">
+                        <rect key="frame" x="88" y="29" width="94" height="14"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="12"/>
+                        <color key="textColor" red="0.45098042490000001" green="0.45098042490000001" blue="0.45098042490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgo-du-07o">
+                        <rect key="frame" x="50" y="50" width="20" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfS-aI-LJA">
+                                <rect key="frame" x="3.5" y="4.5" width="13" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="1cc-Yg-gmt"/>
+                            <constraint firstItem="QfS-aI-LJA" firstAttribute="centerY" secondItem="qgo-du-07o" secondAttribute="centerY" id="cpU-C6-4Ua"/>
+                            <constraint firstItem="QfS-aI-LJA" firstAttribute="centerX" secondItem="qgo-du-07o" secondAttribute="centerX" id="dr6-VX-Hpv"/>
+                            <constraint firstAttribute="height" constant="20" id="f9i-WG-JL0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="H8D-Sx-Zfg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1ts-g1-l6d"/>
+                    <constraint firstItem="QKw-uT-Z6y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="8T0-QK-kFQ"/>
+                    <constraint firstItem="QKw-uT-Z6y" firstAttribute="leading" secondItem="H8D-Sx-Zfg" secondAttribute="trailing" constant="8" id="E1X-qQ-Z9G"/>
+                    <constraint firstItem="H8D-Sx-Zfg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HMn-yo-ffV"/>
+                    <constraint firstItem="NVh-n1-2AY" firstAttribute="leading" secondItem="H8D-Sx-Zfg" secondAttribute="trailing" constant="8" id="O3z-5J-BG8"/>
+                    <constraint firstItem="qgo-du-07o" firstAttribute="trailing" secondItem="H8D-Sx-Zfg" secondAttribute="trailing" constant="-10" id="OA2-tW-dco"/>
+                    <constraint firstItem="NVh-n1-2AY" firstAttribute="top" secondItem="QKw-uT-Z6y" secondAttribute="bottom" constant="2" id="XvE-3c-Fv3"/>
+                    <constraint firstAttribute="bottom" secondItem="H8D-Sx-Zfg" secondAttribute="bottom" id="h9x-ud-raZ"/>
+                    <constraint firstItem="qgo-du-07o" firstAttribute="bottom" secondItem="H8D-Sx-Zfg" secondAttribute="bottom" constant="-10" id="n6Q-6N-xUs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="eventCountdownLabel" destination="NVh-n1-2AY" id="Vde-r4-umk"/>
+                <outlet property="eventEmojiLabel" destination="QfS-aI-LJA" id="gTX-Jz-Ssz"/>
+                <outlet property="eventEmojiLabelBackgroundView" destination="qgo-du-07o" id="ifZ-MR-s2a"/>
+                <outlet property="eventImageView" destination="H8D-Sx-Zfg" id="xa1-Dm-RgN"/>
+                <outlet property="eventNameLabel" destination="QKw-uT-Z6y" id="20E-aX-ca7"/>
+            </connections>
+            <point key="canvasLocation" x="83.333333333333343" y="0.6696428571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
