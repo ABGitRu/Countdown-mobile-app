@@ -6,14 +6,20 @@
 //
 
 import UIKit
-
+    //TODO: поправить отступы, удалить boilerplate code
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
-    
+
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //TODO: увести логику в отдельный private метод и вызвать его тут
+        // чтобы не городить if else можно сделать так
+//      var initialViewController: UIViewController
+// 		let condition = UserDefaults.standard.bool(forKey: "EventsViewControlerWasOpened")
+//      initialViewController = condition: storyboard.instantiateViewController(withIdentifier: "Main") ? storyboard.instantiateViewController(withIdentifier: "Welcome")
+//      ключи для userdefaults и идентификаторы сториборда лучше перевести в отдельный enum
         var initialViewController: UIViewController
         if UserDefaults.standard.bool(forKey: "EventsViewControlerWasOpened") {
             initialViewController = storyboard.instantiateViewController(withIdentifier: "Main")
